@@ -7,22 +7,28 @@
     <title>Forecast App</title>
   </head>
   <body>
+    <div class="forecast-app">
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+        <input type="submit" value="Search" class="search-form-button" />
       </form>
     </header>
     <main>
+      <div class="forecast-app-data">
       <div>
-        <h1>Johannesburg</h1>
-        <p>
+        <h1 class="forecast-app-city">Johannesburg</h1>
+        <p class="forecast-app-details">
           Wednesday 22:01, light intensity drizzle
           <br />
-          Humidity: 97%, Wind: 3.6km/h
+          Humidity: <strong>97%</strong>, Wind: <strong>3.6km/h</strong>
         </p>
       </div>
-      <div>🌧 16 °C</div>
+      <div class="forecast-app-temperature-container">
+        <div class="forecast-app-icon">🌧 </div>
+        <div class="forecast-app-temperature">16</div>
+        <div class="forecast-app-unit">°C</div>
+      </div>
     </main>
     <footer>
       This project is coded by
@@ -36,5 +42,6 @@
         >hosted Netlify</a
       >
     </footer>
+    </div>
   </body>
 </html>
