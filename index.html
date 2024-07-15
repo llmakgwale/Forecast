@@ -9,15 +9,15 @@
   <body>
     <div class="forecast-app">
     <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required id="search-form-input" class="search-form-input" />
         <input type="submit" value="Search" class="search-form-button" />
       </form>
     </header>
     <main>
       <div class="forecast-app-data">
       <div>
-        <h1 class="forecast-app-city">Johannesburg</h1>
+        <h1 class="forecast-app-city" id="city">Johannesburg</h1>
         <p class="forecast-app-details">
           Wednesday 22:01, light intensity drizzle
           <br />
@@ -43,5 +43,6 @@
       >
     </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
